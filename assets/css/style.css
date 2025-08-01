@@ -1,0 +1,234 @@
+/* أنماط عامة */
+:root {
+    --primary-color: #6c63ff;
+    --secondary-color: #f8f9fa;
+    --dark-color: #343a40;
+    --light-color: #f8f9fa;
+    --success-color: #28a745;
+    --danger-color: #dc3545;
+    --warning-color: #ffc107;
+    --info-color: #17a2b8;
+}
+
+body {
+    font-family: 'Tajawal', sans-serif;
+    direction: rtl;
+    text-align: right;
+}
+
+.hero-section {
+    background-color: var(--secondary-color);
+    padding: 5rem 0;
+}
+
+.card {
+    transition: all 0.3s ease;
+    border: none;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.craft-card img, .product-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.price {
+    font-weight: bold;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+/* أنماط التنقل */
+.navbar {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: var(--primary-color) !important;
+}
+
+.nav-link {
+    font-weight: 500;
+}
+
+/* أنماط التذييل */
+footer {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    padding: 3rem 0;
+}
+
+.footer-links a {
+    color: var(--light-color);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.footer-links a:hover {
+    color: var(--primary-color);
+}
+
+.social-icons a {
+    color: var(--light-color);
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+
+.social-icons a:hover {
+    color: var(--primary-color);
+}
+
+/* أنماط الصفحات الداخلية */
+.page-header {
+    background-color: var(--secondary-color);
+    padding: 3rem 0;
+    margin-bottom: 3rem;
+}
+
+.product-images {
+    margin-bottom: 2rem;
+}
+
+.main-image {
+    height: 400px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+.thumbnail {
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+    margin-left: 0.5rem;
+    cursor: pointer;
+    border: 1px solid #ddd;
+}
+
+.product-details h1 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.product-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin: 1rem 0;
+}
+
+.product-description {
+    line-height: 1.8;
+}
+
+/* أنماط النماذج */
+.form-control {
+    margin-bottom: 1rem;
+}
+
+.form-label {
+    font-weight: 500;
+}
+
+/* أنماط بطاقات المنتجات في القوائم */
+.product-list-card img {
+    height: 150px;
+    object-fit: cover;
+}
+
+/* أنماط لوحة التحكم */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    padding: 48px 0 0;
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.1);
+    background-color: var(--dark-color);
+    color: white;
+}
+
+.sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: 0.5rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.sidebar .nav-link {
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 0.75rem 1.5rem;
+}
+
+.sidebar .nav-link.active {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar .nav-link:hover {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-heading {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    padding: 0 1.5rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* أنماط الجداول */
+.table th {
+    font-weight: 600;
+}
+
+/* أنماط البادجات */
+.badge {
+    font-weight: 500;
+    padding: 0.35em 0.65em;
+}
+
+.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+/* أنماط الوسائط المتعددة */
+@media (max-width: 767.98px) {
+    .sidebar {
+        position: static;
+        height: auto;
+    }
+    
+    .hero-section {
+        padding: 3rem 0;
+    }
+    
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+}
